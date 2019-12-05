@@ -27,6 +27,17 @@
         }
     }
 
+    .container::before{
+        content: '';
+        position: absolute;
+        transform: translate(-0.65vw, 38vh);
+        height: 12vh;
+        width: 0.25vw;
+        background-color: white;
+        opacity: 0.35;
+        border-radius: 1vh;
+    }
+
     .container[data-hide-container="true"]{
         animation: slide-out 0.5s ease-out;
         animation-fill-mode: forwards;
