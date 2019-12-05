@@ -1,12 +1,14 @@
 <script>
 	import Sidenav from "./Sidenav.svelte";
 	import GoLive from "./GoLive.svelte";
+	import UploadNewVideo from "./UploadNewVideo.svelte";
 </script>
 
 <main>
 
 	<Sidenav/>
 	<GoLive/>
+	<UploadNewVideo/>
 
 
 </main>
