@@ -1,10 +1,13 @@
 <script>
 	import Sidenav from "./Sidenav.svelte";
+	import GoLive from "./GoLive.svelte";
 </script>
 
 <main>
 
-	<Sidenav/>	
+	<Sidenav/>
+	<GoLive/>
+
 
 </main>
 
