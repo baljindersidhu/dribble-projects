@@ -1,7 +1,7 @@
 <script>
     import SvgLoader from './SvgLoader.svelte';
     let brandIcon = 'https://image.flaticon.com/icons/svg/2009/2009904.svg';
-    let bottomIcon = 'https://image.flaticon.com/icons/svg/16/16049.svg';
+    let bottomIcon = 'https://image.flaticon.com/icons/svg/1828/1828490.svg';
     let bottomIconFill = 'white;'
     let userAvatars = [
         'https://image.flaticon.com/icons/svg/145/145849.svg',
@@ -80,8 +80,8 @@
     }
 
     .bottomIcon{
-        width: 1.75vw;
-        height: 2.5vh;
+        width: 2.5vw;
+        height: 3.5vh;
         margin-bottom: 4vh;
     }
 
