@@ -97,6 +97,7 @@
         font-size: 1vmax;
         padding: 2vh 2vw;
         margin-top: 1vh;
+        margin-left: -1.5vw;
         border-radius: 1vmax;
         animation: fade-in 0.5s ease-in-out;
         animation-delay: 1s;
