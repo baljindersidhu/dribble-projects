@@ -20,6 +20,7 @@
 		align-items: flex-start;
 		height: 100vh;
 		background-color: #333;
+		overflow: hidden;
 	}
 
 	:global(body){
