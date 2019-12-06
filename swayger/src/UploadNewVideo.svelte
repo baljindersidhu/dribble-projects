@@ -1,10 +1,23 @@
 <script>
     import SvgLoader from "./SvgLoader.svelte";
     let hideContainer = false;
+    let droppingVideo = false;
 
     let uploadVidIconSrc = "https://image.flaticon.com/icons/svg/626/626075.svg";
     let notificationIconSrc = "https://image.flaticon.com/icons/svg/759/759039.svg";
     let loggedInUserSrc = "https://image.flaticon.com/icons/svg/701/701993.svg";
+
+    const handleUploadContentHover = event => {
+        droppingVideo = true;
+        event.preventDefault();
+        event.dataTransfer.dropEffect = "copy";        
+    }
+
+    const handleVideoUpload = event => {
+        droppingVideo = false;
+        event.preventDefault();
+        console.log(event);
+    }
 </script>
 
 <div class="container" data-hide-container={hideContainer}>
@@ -26,7 +39,10 @@
     </div>
 
     <div class="uploadContainer">
-        <div class="icon">
+        <div class="icon" data-dragover={droppingVideo}
+            on:dragover={handleUploadContentHover}
+            on:dragleave={() => {droppingVideo = false} }
+            on:drop={handleVideoUpload}>
             <div class="placeholder"></div>
             <SvgLoader src={uploadVidIconSrc}/>
         </div>
@@ -131,6 +147,11 @@
         height: 6vh;
         margin-top: 2vh;
         margin-bottom: 4.25vh;
+        transition: transform 0.2s;
+    }
+
+    .uploadContainer .icon[data-dragover="true"]{
+        transform: scale(0.8);
     }
 
     .uploadContainer .icon .placeholder{
@@ -170,9 +191,16 @@
         padding: 2vh 2vw;
         margin-top: 1vh;
         border-radius: 1vmax;
+        cursor: pointer;
+        box-shadow: none;
+        transition: box-shadow 0.3s ease-in-out;
         animation: fade-in 0.5s ease-in-out;
         animation-delay: 1s;
         animation-fill-mode: backwards;
+    }
+
+    .uploadFileBtn:hover{
+        box-shadow: 0px 3px 5px #ddd;
     }
 
     @keyframes fade-in{
