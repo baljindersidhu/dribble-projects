@@ -7,7 +7,8 @@
         'https://image.flaticon.com/icons/svg/145/145849.svg',
         'https://image.flaticon.com/icons/svg/145/145848.svg',
         'https://image.flaticon.com/icons/svg/145/145847.svg',
-        'https://image.flaticon.com/icons/svg/145/145843.svg'
+        'https://image.flaticon.com/icons/svg/145/145843.svg',
+        'https://image.flaticon.com/icons/svg/145/145850.svg'
     ]
 </script>
 
