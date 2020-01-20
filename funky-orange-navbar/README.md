@@ -1,3 +1,8 @@
+# Final Rendered Template
+![final template](chrome-capture.gif)
+
+This template is a direct inspiration from [Dribbble](https://dribbble.com/shots/9074959-Tabber-animation)
+
 *Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
 ---
