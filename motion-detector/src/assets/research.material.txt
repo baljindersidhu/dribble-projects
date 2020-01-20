@@ -1,0 +1,10 @@
+https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent/rotationRate
+
+https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent
+
+https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation
+
+https://developers.google.com/web/fundamentals/native-hardware/device-orientation
+
+
+Test at: https://stackblitz.com/edit/angular-2n8wz2?file=src%2Fapp%2Fapp.component.html

@@ -1,0 +1,6 @@
+<p *ngIf="!supports_motion_detection">Sorry, your device does not support motion detection</p>
+<h4>Position</h4>
+<p>{{message}}</p>
+
+<h4 *ngIf="deviceShakes.length > 0">Device Shakes</h4>
+<ul><li *ngFor="let shake of deviceShakes">{{getTimeElapsed(shake)}}</li></ul>
